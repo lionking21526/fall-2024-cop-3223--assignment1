@@ -53,7 +53,7 @@ double calculateArea()
     double sqrRadi = pow(radius,2);
     area = 2 * PI * sqrRadi;
 
-    return 4;
+    return 3;
 }
 
 double calculateWidth()
