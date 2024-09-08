@@ -22,16 +22,16 @@ double calculateDistance()
     double x2 = 0;
     double y1 = 0;
     double y2 = 0;
-    double sumx = 0;
-    double sumy = 0;
+    double totalX = 0;
+    double totalY = 0;
     double distance = 0;
 
     printf("Enter x1, x2, y1, and y2 points");
-    scanf("%lf %lf %lf %lf", &x1,&x2,&y1,&y2);
+    scanf("%lf %lf %lf %lf",&x1,&x2,&y1,&y2);
 
-    sumx = x2-x1;
-    sumy = y2-y1;
-    distance = sqrt((pow(sumx,2))+(pow(sumy,2)));
+    totalX = pow((x2-x1),2);
+    totalY = pow((y2-y1),2);
+    distance = sqrt(totalX + totalY);
 
     return distance;
 }
