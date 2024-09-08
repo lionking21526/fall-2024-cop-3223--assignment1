@@ -1,7 +1,7 @@
 //********************************************************
 // fracturing.c
 // Author: Christopher Baez
-// Date: 9/07/2024
+// Date: 9/08/2024
 // Class: COP 3223C, Professor Parra
 // Purpose: The purpose of this code practice functions 
 // as well as exploring the concept of fracturing. 
@@ -29,10 +29,10 @@ double calculateDistance()
     printf("Enter x1, x2, y1, and y2 points");
     scanf("%lf %lf %lf %lf",&x1,&x2,&y1,&y2);
 
-    totalX = pow((x2-x1),2);
+    totalX = pow((x2-y1),2);
     totalY = pow((y2-y1),2);
     distance = sqrt(totalX + totalY);
-
+    
     return distance;
 }
 
@@ -65,7 +65,7 @@ double calculateWidth()
     double sumx = 0;
 
     printf("Enter x1, x2, y1, and y2 points");
-    scanf("%lf,%lf,%lf,%lf",&x1,&x2,&y1,&y2);
+    scanf("%lf %lf %lf %lf",&x1,&x2,&y1,&y2);
 
     sumx = x2-x1;
 
@@ -83,7 +83,7 @@ double calculateHeight()
     double sumy = 0;
 
     printf("Enter x1, x2, y1, and y2 points");
-    scanf("%lf,%lf,%lf,%lf",&x1,&x2,&y1,&y2);
+    scanf("%lf %lf %lf %lf",&x1,&x2,&y1,&y2);
 
     sumy = y2-y1;
 
