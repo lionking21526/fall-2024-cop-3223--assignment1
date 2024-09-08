@@ -27,7 +27,7 @@ double calculateDistance()
     double distance = 0;
 
     printf("Enter x1, x2, y1, and y2 points");
-    scanf("%lf,%lf,%lf,%lf",&x1,&x2,&y1,&y2);
+    scanf("%lf %lf %lf %lf",&x1,&x2,&y1,&y2);
 
     sumx = x2-x1;
     sumy = y2-y1;
