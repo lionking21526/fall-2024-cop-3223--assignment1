@@ -16,6 +16,7 @@
 #include <math.h>
 #define PI 3.14
 
+// Distance calculation
 double calculateDistance()
 {
     double x1 = 0;
@@ -26,36 +27,39 @@ double calculateDistance()
     double totalY = 0;
     double distance = 0;
 
-    printf("Enter x1, x2, y1, and y2 points");
+    printf("Enter x1, x2, y1, and y2 points"); // Takes user input
     scanf("%lf %lf %lf %lf",&x1,&x2,&y1,&y2);
 
     totalX = pow((x2-y1),2);
     totalY = pow((y2-y1),2);
-    distance = sqrt(totalX + totalY);
+    distance = sqrt(totalX + totalY); // Distance formula
     
     return distance;
 }
 
+// calculates perimeter
 double calculatePerimeter()
 {
     double perimeter = 0;
 
-    perimeter = PI * calculateDistance();
+    perimeter = PI * calculateDistance(); // Cicumfarance formula
 
     return 3;
 
 }
 
+// Calculate are
 double calculateArea()
 {
     double area = 0;
     double radius = (calculateDistance())/2;
     double sqrRadi = pow(radius,2);
-    area = 2 * PI * sqrRadi;
+    area = 2 * PI * sqrRadi; // Area for a circle formula
 
     return 3;
 }
 
+// Calculate circle width
 double calculateWidth()
 {
     double x1 = 0;
@@ -73,6 +77,7 @@ double calculateWidth()
 
 }
 
+// Calculate circle height
 double calculateHeight()
 {
     double x1 = 0;
@@ -90,6 +95,7 @@ double calculateHeight()
     return 1;
 }
 
+// main function to call functions
 int main(int argc, char** argv)
 {
     calculateDistance();
